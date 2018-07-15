@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+           <script>
+           var myWord=new String ("It is impolite to wink!");
+		   myWord=myWord.substring(18,21).fontsize(50).italics().fontcolor("red").blink();
+		   
+		   document.write(myWord + "<hr/>");
+         
+    
+	var txt="I am a java programmer and I love java. Java is far better from anyone.";
+	document.write("txt length: " + txt.length + "<hr/>");
+	
+	
+	
+	 var str="I am a java programmer and I love java. Java is far better from anyone.";
+	  var pos=str.indexOf("java");
+	 document.write("str.indexOf('java') : " + pos + "<hr/>");
+	  
+	  
+	  
+	  var str="I am a java programmer and I love java. Java is far better from anyone.";
+	  var pos=str.lastIndexOf("am");
+	  document.write("str.lastIndexOf('I') : " + pos + "<hr/>");
+	
+	
+	  var str="I am a java programmer and I love java. Java is far better from anyone.";
+	   var pos=str.indexOf("java",10);
+	  document.write("str.indexOf('java') : " + pos + "<hr/>");
+	  
+	  var str="I am a java programmer and I love java. Java is far better from anyone.";
+	   var pos=str.search("java");
+	  document.write("str.search('java') : " + pos + "<hr/>");
+	  
+	  
+	  
+	  
+           
+           </script>
+</body>
+</html>

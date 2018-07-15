@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+       var display="<h3>" + self.name + "</h3>";
+        display +="";
+		var gone="";
+		var alpha= self.closed;
+		if(alpha==false) {
+			var gone=" never";
+			}
+			
+		display +="This window has" + gone + " been closed. <br>";
+		self.defaultStatus="\" This window property can be changed.\"";
+		display += "The default status reads: " + self.defaultStatus + "<br>";
+		document.write(display);
+
+
+</script>
+
+<a href="dummy.html">Go Dummy </a>
+
+</body>
+</html>

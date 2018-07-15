@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+                 
+                 
+                 <script>
+                     function validation(){
+					var a= document.forms["myForm"]["ID"].value;
+					var b= document.forms["myForm"]["fname"].value;
+					var bb= document.forms["myForm"]["Gender"].value;
+					var c= document.forms["myForm"]["e-mail"].value;
+					var d= document.forms["myForm"]["age"].value;
+					var dd= document.forms["myForm"]["Password"].value;
+					var r= document.forms["myForm"]["round"].value;
+				
+					
+					if (a.length <7 || a.length >=8){
+					
+						alert("ID Number Must be 7 Digit");
+						return false;
+						}
+					
+					if(b==""){
+						alert("Name must be filled out");
+						return false;
+						}
+					
+					if(bb==""){
+						alert("Gender must be Select");
+						return false;
+						}
+						
+						
+					if(r=="Select The Round"){
+						alert("Plz Select the round");
+						return false;
+						}
+					
+					if(c==""){
+						alert("Email must be filled out");
+						return false;
+						}	 
+					
+					if(d <18 || d >30 ){
+						alert("Age must be Between 18-30");
+						return false;
+						}
+						
+				  if(dd.length < 6 ){
+						alert("Password Minimum 6 digit");
+						return false;
+						}	 	 
+						 
+						 }
+						 
+			
+			
+			function sendData() {
+                var value1 = "value1";
+                var value2 = "value2";
+                var value3 = "value3";
+                var value4 = "value4";
+                var value5 = "value5";
+				var value6 = "value6";
+				
+                var allValue = "?para1= " + value1 + "&para2= " + value2 + "&para3= " + value3 + "&para4= " + value4 + "&para5= " + value5+ "&para6= " + value6;
+                window.location.href = "display.html" + allValue;
+            }
+			
+                 
+                 
+                 </script>
+
+
+
+
+</head>
+
+<body>
+<table>
+       <form name="myForm" action="display.html" onsubmit="return validation()">
+       <tr> 
+         <td><label> ID:</label></td>
+          <td>:</td>
+         <td><input type="text" name="ID"/></td>
+       </tr>
+       
+       <tr>
+          <td><label> Name:</label></td>
+          <td>:</td>
+        <td><input type="text" name="fname"/></td>
+        </tr>
+        
+        <tr> 
+         <td><label> Gender:</label></td>
+          <td>:</td>
+         <td> Male<input type="radio" name="Gender"/>
+        Female<input type="radio" name="Gender"/></td>
+       </tr>
+        
+        <tr>
+          <td><label> Age:</label></td>
+          <td>:</td>
+        <td><input type="number" name="age"/></td>
+        </tr>
+       
+       <tr>
+          <td><label> Round:</label></td>
+          <td>:</td>
+        <td><select name="round">
+		<option>Select The Round</option>
+		<option>Round-35</option>
+		<option>Round-36</option>
+		<option>Round-37</option>
+		<option>Round-38</option>
+		</select></td>
+        </tr>
+		
+		
+       <tr>
+          <td><label>Email:</label></td>
+          <td>:</td>
+        <td><input type="email" name="e-mail"/></td>
+        </tr>
+        
+         <tr>
+          <td><label>Password:</label></td>
+          <td>:</td>
+        <td><input type="password" name="Password"/></td>
+        </tr>
+        
+        <tr>
+          <td></td>
+          <td></td>
+        <td><input type="submit" value="Submit"/>
+        <input type="reset" value="Clear Form"/></td>
+        </tr>
+       
+        
+        
+        </form>
+ </table>
+</body>
+</html>

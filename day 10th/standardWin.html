@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+<script>
+var sampWin1;
+         function GetStanWin() {
+			 sampWin1=window.open("sampWin.html", "sampWin1", "toolbar=no, width=200, height=150");
+			 }
+		 function moveRel(){
+			 sampWin1.moveBy(300,150)
+			 sampWin1.focus();
+			 }
+			 
+			 function moveAbs(){
+			 sampWin1.moveTo(200,420)
+			 sampWin1.focus();
+			 }
+			 function shrink(){
+			 sampWin1.resizeBy(15,10)
+			 sampWin1.focus();
+			 }
+			 function shrivel(){
+			 sampWin1.resizeTo(400,300)
+			 sampWin1.focus();
+			 }
+</script>
+</head>
+
+<body bgcolor="#66FF33">
+<center><p>
+  <h2>Window Control</h2>
+
+        <form>
+              <input type="button" name="openBut" value="Click to Open New Window" onclick="GetStanWin()"><br>
+              <input type="button" name="mvbyBut" value="Click to move relative" onclick="moveRel()"> <br>
+              <input type="button" name="mvtoBut" value="Click to move absolute" onclick="moveAbs()"> <br>
+              <input type="button" name="shrinkBut" value="Click to change relative size" onclick="shrink()"> <br>
+              <input type="button" name="shrivelBut" value="Click to change absolute size" onclick="shrivel()"> <br>
+        
+        
+        
+        </form>
+  </p>
+</center>
+</body>
+</html>

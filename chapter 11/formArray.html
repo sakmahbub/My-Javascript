@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+     <script>
+         function sendEm(){
+			 var newDisplay="";
+			 var myForm=document.enter.length;
+			 
+			 for(var counter=0; counter < myForm; counter++){
+				 newDisplay +=document.forms[0].elements[counter].value + "\n";
+				 }
+			 document.forms[1].elements[1].value =newDisplay;
+			 }
+     </script>
+</head>
+
+<body>
+<h3> Enter the information</h3>
+   <form name="enter">
+    <table>
+       
+        
+        
+        <tr>
+            <td colspan="2">First Name:<input type="text" name="fName" /></td>
+            <td colspan="2">Last Name:<input type="text" name="lName" /></td>
+        </tr>
+        
+        
+         <tr>
+            <td>Address:<input type="text" name="address" /></td>
+            <td>City:<input type="text" name="city" /></td>
+            <td>State:<input type="text" name="state" /></td>
+            <td>Zip Code:<input type="text" name="zip" size="6"/></td>
+        </tr>
+        
+        
+         <tr>
+            <td colspan="4">Email:<input type="text" name="email" /></td>
+            
+        </tr>
+       
+    </table>
+    
+    </form>
+    
+            
+            
+            <form name="transfer">
+            <input type="button" value="Transfer Array" onclick="sendEm()" />
+            <textarea rows="8" cols="80" name="gather"></textarea>
+            
+            
+            </form>
+            
+</body>
+</html>

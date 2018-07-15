@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+     <script>
+           function yourCookie(name){
+			   var remain=new Date("November 9, 2018");
+			   document.cookie= escape(name + document.baker.myCookie.value + "; expires=" + remain.toGMTString()+";");
+			   }
+			   
+			   
+			   function welcomeBack(){
+				   var seeMe=unescape(document.cookie);
+				   var tagIt=seeMe.indexOf(";");
+				   seeMe=seeMe.substring(11,tagIt);
+				   alert("Hello there, " + seeMe);
+				   
+				   }
+     </script>
+</head>
+
+<body onload="document.baker.reset()">
+    <form name="baker">
+    <input type="text" name="myCookie" /><br />
+    <h3>Type in the value for your cookie and click the button to set the cookie</h3>
+    <input type="button" value="Bake Cookie" onclick="yourCookie('goodCookie=');" />
+     <h3>Click the button to read the value of the cookie along with a greeting</h3>
+     <input type="button" value="See Cookie" onclick="welcomeBack();" />
+    
+        
+    
+    </form>
+</body>
+</html>

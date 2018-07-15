@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+</style>
+</head>
+
+<body>
+<script>
+function doIt() {
+	window.document.petstore.puppy.value="Swissy";
+	window.document.petstore.clicker.value="I\'ve been clicked";
+	}
+</script>
+
+<form name="petstore">
+<input type="text" name="puppy"/>
+<input type="button" name="clicker" value="Click to change value of text window."
+onclick="doIt()" />
+
+</form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+    <script> 
+         function countAnchors(){
+			 alert("This script has " + document.anchors.length + "anchors.");
+			 }
+	
+	function goAnchors(anchName){
+		  location.hash=anchName;
+		}		 
+    </script>
+</head>
+
+<body onload="countAnchors()">
+      <h1>Top Level <a name="top"></a></h1>
+      <a href="#" onmousedown="goAnchors('one')">One</a> | <a href="#" onmouseout="goAnchors('two')">Two</a> | <a href="#" onmousemove="goAnchors('three')">Three</a> | <a href="#" onmouseover="goAnchors('four')">Four</a>
+      
+      <p>
+      <p><hr/><hr/>
+      <p>
+      <h2>Level One <a name="one"></a></h2>
+      
+      <p><hr/><hr/>
+      <p>
+      <h2>Level Two <a name="two"></a></h2>
+      
+      
+      <p><hr/><hr/>
+      <p>
+      <h2>Level Two <a name="two"></a></h2>
+      
+      
+      <p><hr/><hr/>
+      <p>
+      <h2>Level Two <a name="two"></a></h2>
+      
+      
+      <p><hr/><hr/>
+      <p>
+      <h2>Level Two <a name="two"></a></h2>
+      
+      <p><hr/><hr/>
+      <p>
+      <h2>Level Two <a name="two"></a></h2>
+      <p><hr/><hr/>
+      <p>
+      <h2>Level Two <a name="two"></a></h2>
+      
+      <p><hr/><hr/>
+      <p>
+      <h2>Level Three <a name="three"></a></h2>
+      
+      <p><hr/><hr/>
+      <p><a href="#" onmouseup="goAnchors('top')">Top</a>
+      <h2>Level Four<a name="four"></a></h2>
+     
+</body>
+</html>

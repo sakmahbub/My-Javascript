@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+     <script language="javascript">
+	 function addEmUp(){
+		 var sum=parseFloat(document.calc.aOne.value) + parseFloat(document.calc.aTwo.value);
+		 alert(sum);
+		 document.write(document.calc.aOne.value +  " + " + document.calc.aTwo.value + " = " + sum);
+		 }
+     
+     </script>
+</head>
+
+<body bgcolor="#ffffaa">
+     <h4>Enter 2 numbers and press the sum button</h4>
+       <form name="calc">
+       
+       <input name="aOne" type="text" /><br />
+       <input name="aTwo" type="text" />
+       <input type="button" value="Make Sum" onclick="addEmUp()" />
+       
+       </form>
+</body>
+</html>

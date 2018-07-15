@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+  <style>
+      .abc{
+		  color:red;
+		  }
+  </style>
+</head>
+     
+<body>
+   
+       <table>
+         <form name="myForm" method="post" action="formValidation84.html" onsubmit="return formValidition()">
+              <tr>
+                 <td><label>Name</label></td>
+                 <td>:</td>
+                 <td><input type="text" name="fname" /></td>
+                 <td><label id="sName" class="abc"></label></td>
+                 
+              </tr>
+              
+              
+              <tr>
+                 <td><label>ID</label></td>
+                 <td>:</td>
+                 <td><input type="text" name="ID"  /></td>
+                 <td><label id="sID" class="abc"></label></td>
+                 
+              </tr>
+              
+              
+              <tr>
+                 <td><label>Gender</label></td>
+                 <td>:</td>
+                 <td>Male<input type="radio" name="Gender" value="Male" />
+                   Female<input type="radio" name="Gender" value="Female" /></td>
+                 <td><label id="sGender" class="abc"></label></td>
+                 
+              </tr>
+              
+              
+              <tr>
+                 <td><label>Age</label></td>
+                 <td>:</td>
+                 <td><input type="number" name="age" /></td>
+                 <td><label id="sAge" class="abc"></label></td>
+                 
+              </tr>
+              
+              
+              <tr>
+                 <td><label>Round</label></td>
+                 <td>:</td>
+                 <td><select name="round">
+                    <option>Select the Round</option>
+                    <option>Round-37</option>
+                    <option>Round-38</option>
+                    <option>Round-39</option>
+                    <option>Round-33</option>
+                    <option>Round-34</option>
+                 </select></td>
+                 <td><label id="sRound" class="abc"></label></td>
+                 
+              </tr>
+              
+              
+              <tr>
+                 <td></td>
+                 <td></td>
+                 <td><input type="submit" value="Submit" />
+                 <input type="reset" value="Clear Form" /></td>
+                 <td><label id="" class="abc"></label></td>
+                 
+              </tr>
+              
+              
+         </form>
+       </table>
+      
+      
+      
+      
+      <script>
+        function formValidition(){
+			var vName =document.forms["myForm"]["fname"].value;
+			var vID =document.forms["myForm"]["ID"].value;
+			var vGender =document.forms["myForm"]["Gender"].value;
+			var vAge =document.forms["myForm"]["age"].value;
+			var vRound =document.forms["myForm"]["round"].value;
+			
+			if(vName==""){
+				document.getElementById('sName').innerHTML="Filled out your Name";
+				return false;
+				
+				}
+			if(vName.length<4){
+				document.getElementById('sName').innerHTML="Name at least 4 latter";
+				return false;
+				
+				}
+				
+			if(vID.length <7 || vID.length >=8){
+				document.getElementById('sID').innerHTML="ID must be 7 digit";
+				return false;
+				
+				}
+				
+				
+		if(vGender==""){
+				document.getElementById('sGender').innerHTML="Select your Gender";
+				return false;
+				
+				}
+				
+				
+				
+	if(vAge<18 || vAge>30 ){
+				document.getElementById('sAge').innerHTML="Age between 18-30";
+				return false;
+				
+				}
+				
+				
+	if(vRound=="Select the Round"){
+				document.getElementById('sRound').innerHTML="Select your round";
+				return false;
+				
+				}else{
+					document.write("Name :"+vName +"<br>");
+					document.write("ID :"+ vID+"<br>");
+					document.write("Gender :"+ vGender+"<br>");
+					document.write("Age :"+vAge +"<br>");
+					document.write("Round:"+vRound +"<br>");
+					
+					}
+				
+				
+												
+			
+			
+			}
+      </script>
+      
+   
+</body>
+</html>

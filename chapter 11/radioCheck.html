@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+      
+      
+      
+      <script language="javascript">
+	      function sortItOut(form){
+			  var display="Key Feature and Components \n\n";
+			  var reviewer =new Object();
+			    reviewer=document.hardware;
+				for( var counter=0; counter < reviewer.length; counter++ ){
+					if(reviewer.elements[counter].checked){
+						display +=reviewer.elements[counter].value + "\n";
+						}
+					
+					}
+					reviewer.showTime.value=display;
+			  }
+      </script>
+</head>
+
+<body onload="document.hardware.reset()">
+<h3>Pick one of the following as the most important:</h3>
+   <form name="hardware">
+   <div>
+      <ul>
+         <input type="radio" name="Components" value="Cost" checked="true" /> Cost <br/>
+         <input type="radio" name="Components" value="Reliability" /> Reliability <br/>
+         <input type="radio" name="Components" value="Reputation" onclick="alert('Reputation?')"/>Reputation <br/>
+         <input type="radio" name="Components" value="Ease of Use"/> Ease of Use <br/>
+      </ul>
+   
+  
+        <h3>Which of the following do you plan to purchase with your computer? Check all that apply:</h3>
+      <ul>
+        <input type="checkbox" name="printer" value="Printer" /> Printer <br/>
+         <input type="checkbox" name="disk" value="High Capacity Disk" /> High Capacity Disk <br/>
+          <input type="checkbox" name="scan" value="Scanner" checked="true" /> Scanner <br/>
+           <input type="checkbox" name="mem" value="Additional Memory" /> Added Memory <br/>
+          
+       
+      
+      </ul></div>
+      
+      <textarea cols="50" rows="8" name="showTime"></textarea>
+      <input type="button" value="Sort It Out" onclick="sortItOut(this.form)" />
+   
+   </form>
+</body>
+</html>

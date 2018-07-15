@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FormValidation</title>
+</head>
+ <body>
+    
+       <table>
+           <form name="myFram" action="formValidationNew.html" onSubmit="return fromValidation()" method="post">
+                <tr>
+                   <td><label>ID</label></td>
+                   <td>:</td>
+                   <td><input type="number" name="ID"/>
+                   <label id="sID"></label>
+                   </td>
+                </tr>
+                
+                
+                <tr>
+                   <td><label>Name</label></td>
+                   <td>:</td>
+                   <td><input type="text" name="fname"/>
+                   <label id="sName"></label>
+                   </td>
+                </tr>
+                
+                
+                
+                <tr>
+                   <td><label>Gender</label></td>
+                   <td>:</td>
+                   <td>Male<input type="radio" name="Gender" value="Male"/>
+                   Female<input type="radio" name="Gender" value="Female"/>
+                   <label id="sGender"></label>
+                   </td>
+                </tr>
+                
+                
+                
+                <tr>
+                   <td><label>Education</label></td>
+                   <td>:</td>
+                   <td>SSC<input type="checkbox" name="Education" value="Education"/>
+                   HSC<input type="checkbox" name="Education" value="Education"/>
+                   <label id="sEducation"></label>
+                   </td>
+                </tr>
+                
+                
+                
+                <tr>
+                   <td><label>Round</label></td>
+                   <td>:</td>
+                   <td><select name="Round">
+                   <option>Select The Round</option>
+                   <option>Round-33</option>
+                   <option>Round-34</option>
+                   <option>Round-35</option>
+                   <option>Round-36</option>
+                   <option>Round-37</option>
+                   <option>Round-38</option>
+                   
+                   </select>
+                   <label id="sRound"></label>
+                   </td>
+                </tr>
+                
+                
+                
+                <tr>
+                   <td><label>Comment</label></td>
+                   <td>:</td>
+                   <td><textarea cols="15" rows="2"></textarea>
+                   <label id="sComment"></label>
+                   </td>
+                </tr>
+                
+                <tr>
+                   <td></td>
+                   <td></td>
+                   <td><input type="submit" value="Submit"/>
+                   <input type="reset" value="Clear"/>
+                   
+                   </td>
+                </tr>
+           </form>
+       </table>
+ 
+ 
+         
+          <script>
+		       function fromValidation(){
+				   
+				   }
+		  
+          </script>
+ </body>
+</html>

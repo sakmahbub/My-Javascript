@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+//+ Add or concatenate Operetor
+
+var x=10;
+var y=5;
+var result=x+y;
+document.write("Result:" + result + "<br/>");
+
+var fName="Donal";
+var mName="J";
+var lName="Trump";
+var fullName=fName+" "+mName+" "+lName;
+document.write("Full Name:" +fullName+ "<br/>");
+
+document.write("<hr/>");
+
+
+//- Substract Or Negative Operetor
+
+var p=10;
+var q=-p;
+var result2=p-q;
+document.write("Result(p-q):" +result2+ "<br/>");
+
+
+
+
+//- Multiply Operetor
+
+var x=10;
+var y=5;
+var result3=x*y;
+document.write("Result(x*y):" + result3 + "<br/>");
+
+
+//- divition Operetor
+var result4=x/y;
+document.write("Result(x/y):" + result4 + "<br/>");
+
+//- modulys Operetor
+var result5=x%y;
+document.write("Result(x%y):" + result5 + "<br/>");
+
+//++ Increment, -- Decrement Operetor
+
+++x;//pre-Increment
+--y;//pre-Decrement
+p++;//post-Increment
+q--;//post-Decrement
+
+document.write("X:"+ x + "Y:"+ y + "P:"+ p + "Q:"+ q + "<br/>");
+
+// <less Than Operetor
+var result6=x<y;
+document.write("Result (x < y):" + result6 + "<br/>");
+
+
+// <Greter Than Operetor
+var result7=x>y;
+document.write("Result(x>y):" + result7 + "<br/>");
+
+// <= less Than or Equal Operetor
+var result8=x<=y;
+document.write("Result(x<=y):" + result8 + "<br/>");
+
+// <= Greter Than or Equal Operetor
+var result9=x>=y;
+document.write("Result(x>=y):" + result9 + "<br/>");
+
+
+document.write("<hr/>");
+
+
+// && logical AND, == Test Or Equality
+var m=10;
+var n=5;
+if ((m==10) && (n==5)) {
+	document.write("Above Both Condition are True"+ "<br/>");
+	} else {
+	document.write("Above one or Both Condition are Flase"+ "<br/>");
+	
+	}
+
+
+
+
+// || logical OR, == Test Or Equality
+var m=10;
+var n=5;
+if ((m==10) || (n==4)) {
+	document.write("Above Both Condition are True"+ "<br/>");
+	} else {
+	document.write("Above one or Both Condition are Flase"+ "<br/>");
+	}
+	
+	
+	
+	
+	// Test OR strict Equality
+var ab=10;
+var cd="10";
+if (ab==cd) {
+	document.write("Above Both Condition are True"+ "<br/>");
+	} else {
+	document.write("Above one or Both Condition are Flase"+ "<br/>");
+	}
+	
+	
+	
+	
+	// Test OR strict Equality
+
+if (ab===cd) {
+	document.write("Above Both Condition are True"+ "<br/>");
+	} else {
+	document.write("Above one or Both Condition are Flase"+ "<br/>");
+	
+	}
+	
+	document.write("<hr/>");
+	// = += -= *= /= %=
+	x=10; //Assign
+	x +=5; //x=x+5, x=10+5, x=15
+	x -=8; //x=x-8, x=10-8, x=2
+	x *=2; //x=x*2, x=10-*2, x=20
+	x /=5; ///x=x/5, x=10/5, x=2
+	x %=3; //x=x%3, x=10%3, x=1
+	
+	document.write("<hr/>");
+	// ?: Ternary Operetor: condition ? true massage : false masssge
+	
+	var age=27;
+	var rs= age > 28 ? true : false;
+	document.write("Result: " + rs + "<br/>");
+	
+	var wc = age >=18 ? "Welcome" : "Not Permitted"
+	document.write("Result: " + wc + "<br/>");
+	
+	document.write("<hr/>");
+	// Typeof Operetor
+	
+	var salary=50000;
+	var name="K M Tuntuni"
+	var students=["Mortuza", "Ruhul", "Sakil"];
+	var result= true;
+	var abc;
+	var rs = null;
+	
+	document.write("salary for Number: " + typeof salary + "<br/>");
+	document.write("name for String: " + typeof name + "<br/>");
+	document.write("students for Object: " + typeof students + "<br/>");
+	document.write("result for Boolean: " + typeof result + "<br/>");
+	document.write("abc for Undefiend: " + typeof abc + "<br/>");
+	document.write("rs for Null: " + typeof rs + "<br/>");
+	document.write("<hr/>");
+	
+	
+	// dalete Operetor
+	
+	var ppp= [10, 20, 30];
+	delete(ppp[2]);
+	document.write([ppp]);
+	document.write("<hr/>");
+	
+</script>
+
+<a href="javascript:void alert ('Wow! JavaScript is Awesome!!!')">Hit Me</a>
+
+</body>
+</html>

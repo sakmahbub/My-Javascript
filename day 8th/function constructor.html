@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+
+var total=new Function("item", "tax", "return item +=tax ");
+document.write(total(20000,3000));
+
+document.write("<hr>");
+
+function makeSum(item, tax) {
+	var total=item + tax;
+	return total;
+	}
+	document.write(makeSum(10000,1500));
+	
+	document.write("<hr>");
+	
+	var total=function(item,tax) {return item +=tax};
+	document.write("Your bill is $" + total(14.95, .06));
+	
+	
+</script>
+</body>
+</html>

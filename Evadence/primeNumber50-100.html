@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+     <script>
+         function pNumber(num){
+			 var n=Math.sqrt(num);
+			 
+			 for (i=2; i<=n; i++){
+				if (num%i==0)
+			  return false;
+				 
+				 }
+				 return true;
+			 }
+			 
+			 
+			 
+			 function cPrimeN(sN,eN){
+				 for(sN; sN<=eN; sN++){
+					 
+					 if(pNumber(sN)){
+						 document.writeln(sN+" " + "Is Prime");
+						 document.writeln("<br/>");
+						 
+						 }else{
+							 document.writeln(sN+ " "+ "Not is Prime")
+							 document.writeln("<br/>");
+							 
+							 }
+					 }
+				 
+				 }
+     
+     
+     </script>
+</head>
+
+<body style="font-size:24px" onload="cPrimeN(50,100)">
+</body>
+</html>

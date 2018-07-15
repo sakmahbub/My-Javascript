@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+
+
+var sum = 0;
+var snumber =1;
+var enumber =10;
+while (snumber <= enumber) {
+	sum += snumber;
+	snumber++;
+	}
+	document.write("Total Sum (while): " + sum + "<hr/>");
+	
+	
+	
+	var sum1 =0;
+	var sn =1;
+	var en =10;
+	for (sn; sn<=en; sn++) {
+		sum1 +=sn;
+		
+		}
+	document.write("Total Sum (For): " + sum1 + "<hr/>");
+	
+	
+	
+	
+	var sum2 =0;
+	var snb =1;
+	var enb =10;
+	do { 
+	sum2 +=snb; snb++;
+		
+		} while (snb<=enb);
+		document.write("Total Sum (Do): " + sum2 + "<hr/>");
+		
+		
+		var table =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+		var sum3 =0;
+		for (var i in table) {
+			sum3 += table[i];
+			}
+			document.write("Total Sum (For in) : " + sum3 + "<hr/>");
+		
+
+
+
+var name =['mahbub', 'ruhul', 'rashed',  'mortuza'];
+		
+		for (var i in name) {
+			if (name[i] == 'mahbub' || name[i] == 'mortuza') {
+				continue;
+				}
+			
+			document.write(name[i]+ "<br/>");
+			}
+			
+</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Focus This</title>
+</head>
+
+<body bgcolor="gaisboro">
+<p>
+<form name="info">
+Please enter your email address:
+<input type="text" name="email" onFocus="fillItIn()">
+</form>
+
+
+
+<script>
+function fillItIn() {
+	//substitute your own email address on the next line
+	document.info.email.value="sakmahbub@gmail.com";
+	}
+	fillItIn();
+	
+	
+	document.write("<hr>");
+	
+	function returnMessage(){
+		var part1="Good";
+		var part2="Morning";
+		var wholeThing=part1 + part2;
+		return wholeThing;
+	}
+	returnMessage();
+	
+	
+	document.write("<hr>");
+	
+	function returnMessage(){
+		var part1="Good";
+		var part2=" Morning";
+		var wholeThing=part1 + part2;
+		return wholeThing;
+	}
+	var putItOut=returnMessage();
+	document.write(putItOut);
+	
+</script>
+</body>
+</html>
